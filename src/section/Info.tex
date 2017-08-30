@@ -1,0 +1,58 @@
+%%% ----------
+\subsection{Информация}
+
+Переход к пункту меню <<Информация>> из 0 уровня меню: 
+
+\textbf{[*]} $\rightarrow$ \textbf{[8]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке \ref{fig:info}.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА			\tabularnewline 
+		\multicolumn{2}{|l|} {Прошивка ПИ MCU}		\tabularnewline
+		\multicolumn{2}{|l|} {Значение: 07.62} 		\tabularnewline 
+		\multicolumn{2}{|l|} {}						\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Информация>>}
+	\label{fig:info}
+\end{figure}
+
+Этот пункт не виден на 1 уровне меню. Используется для просмотра текущих версий прошивок аппарата (см. таблицу~\ref{tab:info}), а так же дополнительных сервисных функций.
+
+\begin{tabularx}{\linewidth}{| M{1cm} | m{5.5cm}| X |}
+	\caption{Информация}  	 
+	\label{tab:info}	\tabularnewline
+    
+    \firsthline
+    
+    \centering № п/п & 
+    \centering Показания индикатора &     
+    \centering Описание
+    \tabularnewline \hline  
+    \endfirsthead
+    
+    \multicolumn{3}{l}{Продолжение таблицы~\ref{tab:info}} 
+    \tabularnewline \hline 
+    \centering № п/п & 
+    \centering Показания индикатора &     
+    \centering Описание
+    \tabularnewline \hline 
+  	\endhead
+    
+    \multicolumn{3}{r}{продолжение следует\ldots} 
+	\endfoot
+	\endlastfoot
+    
+    1	& Прошивка ПИ MCU	& Версия прошивки микроконтроллера на плате индикации блока БСП. \tabularnewline \hline
+    2	& Прошивка БСП MCU	& Версия прошивки микроконтроллера на плате блока БСП. \tabularnewline \hline
+    3	& Прошивка БСП DSP	& Версия прошивки цифрового сигнального процессора на плате блока БСП. \tabularnewline \hline
+    4	& Прошивка БСЗ ПЛИС	& Версия прошивки ПЛИС на плате блока БСЗ. \tabularnewline
+  
+    \lasthline
+\end{tabularx}

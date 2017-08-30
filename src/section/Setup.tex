@@ -1,0 +1,243 @@
+%%% ----------
+\subsection{Установка}
+
+Переход к пункту меню <<Установка>> из 0 уровня меню: 
+
+\textbf{[*]} $\rightarrow$ \textbf{[4]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке~\ref{fig:setup}.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		27.11.06	& \raggedleft 12:30:05		\tabularnewline 
+		\multicolumn{2}{|l|} {1.Режим.} 		\tabularnewline
+		\multicolumn{2}{|l|} {2.Параметры.} 	\tabularnewline 
+		\multicolumn{2}{|l|} {3.Пароль.}		\tabularnewline \hline
+		\multicolumn{2}{ c } {$\downarrow$}		\tabularnewline
+		\multicolumn{2}{|l|} {4.Тест.} 			\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Установка>>}
+	\label{fig:setup}
+\end{figure}
+
+Пункт 4 <<Тест>> появляется только при переходе в один из тестовых режимов. 
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[1]} & - переход к установке режима работы;	\tabularnewline 
+		\textbf{[2]} & - переход к установке параметров; \tabularnewline 
+		\textbf{[3]} & - переход к установке пароля; \tabularnewline 
+		\textbf{[4]} & - переход в меню тест (в режиме <<Тест 1>> или <<Тест 2>>); \tabularnewline 
+		\textbf{[*]} & - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[$\uparrow$]}, \textbf{[$\downarrow$]}  & - листание списка; \tabularnewline
+		\textbf{[CE/C]} & - переход на один уровень меню вверх (возврат на 1 уровень). \tabularnewline				
+	\end{tabular} 
+\end{center}
+
+%%% ----------
+\subsubsection{Режим} \label{sssec:setup_regime}
+
+Переход к пункту меню <<Установка>> из 0 уровня меню: 
+
+\textbf{[*]} $\rightarrow$ \textbf{[4]} $\rightarrow$ \textbf{[1]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке~\ref{fig:setup_regime}.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА		\tabularnewline 
+		\multicolumn{2}{|l|} {~ЗАЩ}		\tabularnewline
+		\multicolumn{2}{|l|} {Вывед} 	\tabularnewline 
+		\multicolumn{2}{|l|} {}			\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Режим>>}
+	\label{fig:setup_regime}
+\end{figure}
+
+При смене режима работы приемопередатчика будет запрошен четырехзначный пароль. При правильном вводе пароля, выбор режима производится кнопками \textbf{[$\uparrow$]} и \textbf{[$\downarrow$]}. Подтверждение выбора - нажатием кнопки \textbf{[ENT]}, отмена ввода - \textbf{[CE/C]}.
+
+Переход в тестовые режимы возможен только из режима <<Выведен>>, при этом ввод пароля не требуется (т.е. можно нажать \textbf{[CE/C]}).
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[$\uparrow$]}  	& - листание списка режимов вверх; \tabularnewline
+		\textbf{[$\downarrow$]} & - листание списка режимов вниз; \tabularnewline
+		\textbf{[*]} 			& - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[ENT]} 			& - установка выбранного режима; \tabularnewline
+		\textbf{[CE/C]} 		& - переход на один уровень меню вверх (возврат в меню <<Установить>>). \tabularnewline				
+	\end{tabular}
+\end{center} 
+
+
+%%% ----------
+\subsubsection{Параметры защиты} \label{sssec:setup_param_def}
+
+Переход к пункту меню <<Параметры защиты>> из 0 уровня меню:
+
+\textbf{[*]} $\rightarrow$ \textbf{[4]} $\rightarrow$ \textbf{[2]} $\rightarrow$ \textbf{[1]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке~\ref{fig:setup_param_def}.
+ 
+\begin{figure}[H]
+	\centering
+	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА		\tabularnewline 
+		\multicolumn{2}{|l|} {Тип Защиты}		\tabularnewline
+		\multicolumn{2}{|l|} {Значение: 0011} 	\tabularnewline 
+		\multicolumn{2}{|l|} {}					\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Параметры защиты>>}
+	\label{fig:setup_param_def}
+\end{figure}
+
+В Приложении~\ref{app:paramGlb} приведено описание параметров и их зависимость от режима совместимости приемопередатчика (общий параметр <<Совместимость>>).
+
+При вводе значений параметров следует руководствоваться общими правилами ввода данных с клавиатуры (см. пункт~\ref{sssec:keyboard_enter}). Приемопередатчик при этом должен находиться в режиме <<Выведен>>.
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[$\uparrow$]}  	& - листание списка параметров вверх; \tabularnewline
+		\textbf{[$\downarrow$]} & - листание списка параметров вниз; \tabularnewline
+		\textbf{[*]} 			& - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[\#]} 			& - просмотр диапазона возможных значений параметра; \tabularnewline
+		\textbf{[ENT]} 			& - переход к вводу значения параметра; \tabularnewline
+		\textbf{[CE/C]} 		& - переход на один уровень меню вверх (возврат в общее меню <<Установить>>). \tabularnewline				
+	\end{tabular}
+\end{center} 
+
+
+%%% ----------
+\subsubsection{Параметры общие} \label{sssec:setup_param_glb}
+
+Переход к пункту меню <<Параметры общие>> из 0 уровня меню:
+
+\textbf{[*]} $\rightarrow$ \textbf{[4]} $\rightarrow$ \textbf{[2]} $\rightarrow$ \textbf{[2]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке~\ref{fig:setup_param_glb}.
+ 
+\begin{figure}[H]
+	\centering
+	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА		\tabularnewline 
+		\multicolumn{2}{|l|} {Синхронизация часов}	\tabularnewline
+		\multicolumn{2}{|l|} {Значение: выкл.} 	\tabularnewline 
+		\multicolumn{2}{|l|} {}					\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Параметры общие>>}
+	\label{fig:setup_param_glb}
+\end{figure}
+
+Коррекцию напряжения и тока производят при запущенном приемопередатчике. Вводят измеренное с помощью внешнего прибора напряжение/ток вводят и аппарат сам вычисляет необходимое значение коррекции. Текущий режим работы приемопередатчика при этом не важен.
+
+В Приложении~\ref{app:paramDef} приведено описание параметров и их зависимость от режима совместимости приемопередатчика (общий параметр <<Совместимость>>).
+
+При вводе значений параметров следует руководствоваться общими правилами ввода данных с клавиатуры (см. пункт~\ref{sssec:keyboard_enter}). Приемопередатчик при этом должен находиться в режиме <<Выведен>>.
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[$\uparrow$]}  	& - листание списка параметров вверх; \tabularnewline
+		\textbf{[$\downarrow$]} & - листание списка параметров вниз; \tabularnewline
+		\textbf{[*]} 			& - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[\#]} 			& - просмотр диапазона возможных значений параметра; \tabularnewline
+		\textbf{[ENT]} 			& - переход к вводу значения параметра; \tabularnewline
+		\textbf{[CE/C]} 		& - переход на один уровень меню вверх (возврат в общее меню <<Установить>>). \tabularnewline				
+	\end{tabular}
+\end{center} 
+
+
+%%% ----------
+\subsubsection{Пароль}
+
+Переход к пункту меню <<Установка>> из 0 уровня меню: 
+
+\textbf{[*]} $\rightarrow$ \textbf{[4]} $\rightarrow$ \textbf{[3]}.
+
+Данный пункт меню используется для смены старого пароля. Для этого сначала нужно ввести старый пароль. а потом ввести новый. При вводе пароля следует руководствоваться общими правилами ввода данных с клавиатуры (см. пункт~\ref{sssec:keyboard_enter}).
+
+
+%%% ----------
+\subsubsection{Тест}
+
+Переход к пункту меню <<Установка>> из 0 уровня меню: 
+
+\textbf{[*]} $\rightarrow$ \textbf{[4]} $\rightarrow$ \textbf{[4]}.
+
+Тестовый режим работы позволяет подавать сигналы на выход приемопередатчика (<<Тест 1>>) или анализировать приниамемые сигналы в процессе пусконаладочных работ или проверки (<<Тест 2>>).
+
+Для перехода в данный пункт меню, необходимо сначала установить режим работы приемопередатчика <<Тест 1>> или <<Тест 2>> (см. пункт~\ref{sssec:setup_regime}).
+
+Внешний вид индикатора данного пункта меню в режиме <<Тест 1>> показан на рисунке~\ref{fig:setup_test_1}.
+ 
+\begin{figure}[H]
+	\centering
+		
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА			\tabularnewline 
+		\multicolumn{2}{|l|} {Гр1:выкл~~~~Гр2:выкл}	\tabularnewline
+		\multicolumn{2}{|l|} {Ввод:Группа 1} 		\tabularnewline 
+		\multicolumn{2}{|l|} {Тест 1}				\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Тест 1>>}
+	\label{fig:setup_test_1}
+\end{figure}
+
+Группа 1 <<сигналы КЧ>> - включение или выключение на передатчике сигналов контрольных частот, применяемых для работы АПК. 
+
+Группа 2 <<сигналы РЗ>> - включение или выключение сигнала на частоте защиты. 
+
+Одновременно может передаваться только один сигнал КЧ или РЗ.
+
+При выборе сигнала следует руководствоваться общими правилами ввода данных с клавиатуры (см. пункт~\ref{sssec:keyboard_enter}).
+
+Внешний вид индикатора данного пункта меню в режиме <<Тест 2>> показан на рисунке~\ref{fig:setup_test_2}.
+ 
+\begin{figure}[H]
+	\centering
+	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА			\tabularnewline 
+		\multicolumn{2}{|l|} {Гр1:выкл~~~~Гр2: РЗ}	\tabularnewline
+		\multicolumn{2}{|l|} {} 					\tabularnewline 
+		\multicolumn{2}{|l|} {Тест 2}				\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Тест 2>>}
+	\label{fig:setup_test_2}
+\end{figure}
+
+<<Тест 2>> позволяет просмотреть присутствующие в линии сигналы, при этом на дисплее выводится тип принимаемого сигнала.
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[*]} 			& - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[CE/C]} 		& - переход на один уровень меню вверх (возврат в общее меню <<Установить>>). \tabularnewline				
+	\end{tabular}
+\end{center} 

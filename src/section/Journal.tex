@@ -1,0 +1,125 @@
+%%% ----------
+\subsection{Журнал}
+
+Переход к пункту меню <<Журнал>> из 0 уровня меню:
+
+\textbf{[*]} $\rightarrow$ \textbf{[1]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке \ref{fig:journal}.
+
+ \begin{figure}[H]
+ 	\centering 
+ 	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		 12:00:00	& \raggedleft Uз=22дБ		\tabularnewline
+		\multicolumn{2}{|l|} {1.Журнал событий} \tabularnewline
+		\multicolumn{2}{|l|} {2.Журнал защиты}	\tabularnewline
+		\multicolumn{2}{|l|} {} 				\tabularnewline
+		\lasthline
+	\end{tabular}
+
+	\caption{<<Журнал>>}
+	\label{fig:journal}
+\end{figure}
+
+Этот уровень меню позволяет перейти к дальнейшему просмотру определенных групп записей в журнале аппаратуры.
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[1]} & - переход к просмотру журнала событий; \tabularnewline
+		\textbf{[2]} & - переход к просмотру журнала защиты; \tabularnewline
+		\textbf{[*]} & - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[CE/C]} & - переход на один уровень меню вверх (возврат на 1 уровень). \tabularnewline
+	\end{tabular}
+\end{center}
+
+%%% ----------
+\subsubsection{Журнал событий}
+
+Переход к пункту меню <<Журнал событий>> из 0 уровня меню: 
+
+\textbf{[*]} $\rightarrow$ \textbf{[1]} $\rightarrow$ \textbf{[1]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке \ref{fig:journal_event}.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА				\tabularnewline 
+		\multicolumn{2}{|l|} {ОБЩ~~~~~~~~11:58:52.251} 	\tabularnewline
+		 \multicolumn{2}{|l|} {Перезапуск~~~~~Введен} 	\tabularnewline 
+		\multicolumn{2}{|l|} {СБ(1/88)~~~~~~~~~07.04.09}\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Журнал событий>>}
+	\label{fig:journal_event}
+\end{figure}
+
+\begin{ESKDexplanation}[1.5cm]
+	\item[,где:]
+	\item \textit{ОБЩ} - источник записи (ОБЩ - общие источники, ЗАЩ - защита);
+	\item \textit{11:58:52.251} - время записи события в журнал;
+	\item \textit{Перезапуск} - тип события;
+	\item \textit{Введен} - значение события;
+	\item \textit{СБ(1/88)} - текущая запись / общее количество записей в журнале событий;
+	\item \textit{07.04.09} - дата события.
+\end{ESKDexplanation}
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[*]} & - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[$\uparrow$]}, \textbf{[$\downarrow$]}  & - листание списка; \tabularnewline
+		\textbf{[CE/C]} & - переход на один уровень меню вверх (возвратк выбору журнала). \tabularnewline				
+	\end{tabular}
+\end{center} 
+
+
+%%% ----------
+\subsubsection{Журнал защиты}
+
+Переход к пункту меню <<Журнал защиты>> из 0 уровня меню: 
+
+\textbf{[*]} $\rightarrow$ \textbf{[1]} $\rightarrow$ \textbf{[2]}.
+
+Внешний вид индикатора данного пункта меню показан на рисунке \ref{fig:journal_def}.
+ 
+ \begin{figure}[H]
+ 	\centering
+		
+	\begin{tabular}{| m{2.5cm}  m{2.5cm} |}
+		\firsthline
+		330кГц-1	& \raggedleft I1=167мА				\tabularnewline 
+		\multicolumn{2}{|l|} {ЗАЩ~~~~~~~~11:58:52.251} 	\tabularnewline
+		\multicolumn{2}{|l|} {Контроль~~~~~000 000} 	\tabularnewline 
+		\multicolumn{2}{|l|} {ЗЩ(1/167)~~~~~~~07.04.09}	\tabularnewline 
+		\lasthline
+	\end{tabular} 
+	
+	\caption{<<Журнал защиты>>}
+	\label{fig:journal_def}
+\end{figure}
+
+\begin{ESKDexplanation}[1.5cm]
+	\item[,где:]
+	\item {\it ЗАЩ} - источник записи (ОБЩ - общие источники, ЗАЩ - защита);
+	\item {\it 11:58:52.251} - время записи события в журнал;
+	\item {\it Контроль} - тип события;
+	\item {\it 000 (0*)000} - логический уровень на входах МАН/ПРМ/ПРД  и выходах РЗ2*/РЗ(1)*/ПРД/ПРМ;
+	\item {\it ЗАЩ(1/167)} - текущая запись / общее количество записей в журнале событий;
+	\item {\it 07.04.09} - дата события.
+\end{ESKDexplanation}
+
+Назначение кнопок на данном уровне меню показано ниже.
+\begin{center}
+	\begin{tabular}{p{2cm} p{15cm}}
+		\textbf{[*]} 	& - возврат на 0 уровень меню; \tabularnewline
+		\textbf{[$\uparrow$]}, \textbf{[$\downarrow$]}  & - листание списка; \tabularnewline
+		\textbf{[CE/C]} & - переход на один уровень меню вверх (возврат к выбору журнала). \tabularnewline				
+	\end{tabular}
+\end{center} 

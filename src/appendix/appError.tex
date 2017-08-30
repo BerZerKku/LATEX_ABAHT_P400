@@ -1,0 +1,140 @@
+%%% ----------
+\ESKDappendix{Обязательное}{Неисправности и предупреждения} \label{app:err}
+
+\begin{tabularx}{\linewidth}{| M{2cm} | m{4.5cm}| X |}
+	\caption{Общие неисправности} 
+	\label{tab:appError_glb_error}	
+	\tabularnewline 
+    
+    \firsthline
+    
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание неисправности 
+    \tabularnewline \hline  
+    \endfirsthead
+    
+    \multicolumn{3}{l}{Продолжение таблицы \ref{tab:appError_glb_error}} 
+    \tabularnewline \hline 
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание неисправности 
+    \tabularnewline \hline 
+  	\endhead
+    
+    \multicolumn{3}{r}{продолжение следует\ldots} 
+	\endfoot
+	\endlastfoot
+    
+    \multicolumn{3}{|l|} {Невозвратные неисправности} 	\tabularnewline \hline
+    0x0001 & Неиспр.чт.FLASH	& Неисправность при чтении данных из микросхемы FLASH-памяти на блоке БСП.	\tabularnewline \hline
+    0x0002 & Неиспр.зап.FLASH	& Неисправность при записи данных в микросхему FLASH-памяти на блоке БСП. 	\tabularnewline \hline
+    0x0004 & Неиспр.чт.PLIS		& Неисправность при чтении данных из микросхемы ПЛИС на блоке БСП.	\tabularnewline \hline
+    0x0008 & Неиспр.зап.PLIS	& Неисправность при записи данных в микросхему ПЛСИ на блоке БСП.	\tabularnewline \hline
+    0x0010 & Неиспр.зап.2RAM	& Неисправность при записи данных в микросхему двухпортового внешнего ОЗУ на блоке БСП	\tabularnewline \hline
+    0x0020 & АК-нет ответа		& Удаленный приемопередатчик не отвечает на вызов автоконтроля. \tabularnewline \hline
+    0x0040 & АК-Снижен.запаса	& Снижение запаса по затуханию. \tabularnewline \hline
+    0x0080 & Помеха в линии		& При автоконтроле, при незапущенных своем и удаленном приемопередатчиках, обнаружен сигнал на выходе приемника - помеха в линии. \tabularnewline \hline
+    
+    \multicolumn{3}{|l|} {Возвратные неисправности} 	\tabularnewline \hline
+    0x0100 & Неиспр.DSP			& Неисправность цифрового сигнального процессора на блоке БСП. \tabularnewline \hline
+    0x0200 & Неиспр.чт.2RAM		& Неисправность при чтении данных из микросхемы двухпортового внешнего ОЗУ на блоке БСП. \tabularnewline \hline
+    0x0400 & Ток покоя			& Во время автоконтроля, при незапущенных своем и удаленном передатчиках, обнаружен сигнал на выходе приемника.	\tabularnewline \hline
+    0x0800 & Низкое напр.вых.	& При запущенном передатчике, напряжение на выходе усилителя мощности снизилось в два раза по сравнению с напряжением, указанным в параметре <<Uвых номинальное>>.	\tabularnewline \hline
+    0x1000 & Высокое напр.вых.	& При запущенно передатчике, напряжение на выходе усилителя мощности выросло в полтора раза по сравнению с напряжением, указанным в параметре <<Uвых номинальное>>.	\tabularnewline 
+    \lasthline
+\end{tabularx} 
+
+\begin{tabularx}{\linewidth}{| M{2cm} | m{4.5cm}| m{10cm}|}
+	\caption{Общие предупреждения} 
+	\label{tab:appError_glb_warning}	
+	\tabularnewline 
+    
+    \firsthline
+    
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание предупреждения 
+    \tabularnewline \hline  
+    \endfirsthead
+    
+    \multicolumn{3}{l}{Продолжение таблицы \ref{tab:appError_glb_error}} 
+    \tabularnewline \hline 
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание предупреждения  
+    \tabularnewline \hline 
+  	\endhead
+    
+    \multicolumn{3}{r}{продолжение следует\ldots} 
+	\endfoot
+	\endlastfoot
+    
+     0x0001 & Установите часы	& Сбой часов приемопередатчика.	\tabularnewline 
+    \lasthline
+\end{tabularx} 
+
+\begin{tabularx}{\linewidth}{| M{2cm} | m{4.5cm}| X|}
+	\caption{Неисправности <<ЗАЩ>>}  	
+	\label{tab:appError_def_error}	\tabularnewline
+    
+     \firsthline
+    
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание неисправности 
+    \tabularnewline \hline  
+    \endfirsthead
+    
+    \multicolumn{3}{l}{Продолжение таблицы \ref{tab:appError_def_error}} 
+    \tabularnewline \hline 
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание неисправности 
+    \tabularnewline \hline 
+  	\endhead
+    
+    \multicolumn{3}{r}{продолжение следует\ldots} 
+	\endfoot
+	\endlastfoot
+    
+    0x0001 & Нет блока БСЗ		& Блок БСЗ отсутствует.								\tabularnewline \hline
+    0x0002 & Неиспр.верс.БСЗ	& Не та версия блока БСЗ.							\tabularnewline \hline
+    0x0004 & Неиспр.перекл.		& Не правильно установлены переключатели блока БСЗ.	\tabularnewline \hline
+    0x0008 & Неиспр.зап.БСЗ		& Ошибка записи в блок БСЗ.							\tabularnewline \hline
+    0x0100 & Неиспр.вход.ПУСК	& Неисправна входная цепь сигнала <<Пуск>>.			\tabularnewline \hline
+    0x0200 & Неиспр.вход.СТОП	& Неисправна входная цепь сигнала <<СТОП>>.			\tabularnewline \hline
+    0x0800 & Неиспр.цепь ВЫХ	& Ошибка контроля выходной цепи.					\tabularnewline \hline
+    0x2000 & Неиспр.зап.ВЫХ		& Ошибка записи в регистр управления блока БСЗ.		\tabularnewline
+    \lasthline
+\end{tabularx} 
+
+
+\begin{tabularx}{\linewidth}{| M{2cm} | m{4.5cm}| X|}
+	\caption{Предупреждения <<ЗАЩ>>}  	
+	\label{tab:appError_def_warning}	\tabularnewline
+    
+     \firsthline
+    
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание предупреждения
+    \tabularnewline \hline  
+    \endfirsthead
+    
+    \multicolumn{3}{l}{Продолжение таблицы \ref{tab:appError_def_warning}} 
+    \tabularnewline \hline 
+    \centering Код & 
+    \centering Показания индикатора &     
+    \centering Описание предупреждения 
+    \tabularnewline \hline 
+  	\endhead
+    
+    \multicolumn{3}{r}{продолжение следует\ldots} 
+	\endfoot
+	\endlastfoot
+    
+    0x0001 & АК-Снижен.запаса	& На приеме низкий уровень сигнала АК от удаленного аппарата.	\tabularnewline \hline
+    0x0002 & Нет сигнала МАН	& Отсутствует напряжение манипуляции. 							\tabularnewline 
+    \lasthline
+\end{tabularx} 

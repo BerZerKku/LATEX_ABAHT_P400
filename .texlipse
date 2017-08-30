@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Thu Aug 17 16:04:26 YEKT 2017
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=src\\p400.tex
+outputFile=ABAHT P400.pdf
+langSpell=en
+markDer=true
+srcDir=
