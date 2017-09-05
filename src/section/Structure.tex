@@ -18,14 +18,14 @@
 		\node[block, align=center]	(level2)	at (08.0,+00.0) {Уровень 2};
 		\node[block, align=center]	(level3) 	at (12.5,+00.0) {Уровень 3};
 		
-		\node[block] (journal) 			at (03.5,-01.0) {\hyperref[ssec:journal]{1.Журнал}};
+		\node[block] (journal) 			at (03.5,-01.0) {\hyperref[ssec:journal]{1.Журнал.}};
 		\draw (node cs:name=journal,anchor=west) |- (0,-1);
 		\node[block] (journal1) 		at (08.0,-02.0) {\hyperref[sssec:journal_event]{1.Журнал событий}};
 		\draw (node cs:name=journal1,anchor=west) |- (3.5,-2);
 		\node[block] (journal2) 		at (08.0,-03.0) {\hyperref[sssec:journal_def]{2.Журнал защиты}};
 		\draw (node cs:name=journal2,anchor=west) |- (3.5,-3) |- (node cs:name=journal,anchor=south);
 		
-		\node[block] (datetime)	 		at (03.5,-04.0) {\hyperref[ssec:datetime]{2.Дата/время}};
+		\node[block] (datetime)	 		at (03.5,-04.0) {\hyperref[ssec:datetime]{2.Дата/время.}};
 		\draw (node cs:name=datetime,anchor=west) |- (0, -4);
 % 		\node[block] (datetime1)	 	at (08.0,-05.0) {1.Дата.};
 % 		\draw (node cs:name=datetime1,anchor=west) |- (3.5,-5);
@@ -33,10 +33,10 @@
 % 		\draw (node cs:name=datetime2,anchor=west) |- (3.5,-6) |-
 % 				(node cs:name=datetime,anchor=south);
 		
-		\node[block] (control) 			at (03.5,-05.0) {\hyperref[ssec:control]{3.Управление}};
+		\node[block] (control) 			at (03.5,-05.0) {\hyperref[ssec:control]{3.Управление.}};
 		\draw (node cs:name=control,anchor=west) |- (0,-5);
 		
-		\node[block] (setup) 			at (03.5,-06.0) {\hyperref[ssec:setup]{4.Установить}};
+		\node[block] (setup) 			at (03.5,-06.0) {\hyperref[ssec:setup]{4.Установить.}};
 		\draw (node cs:name=setup,anchor=west) |- (0,-6);
 		\node[block] (setup1) 			at (08.0,-07.0) {\hyperref[sssec:setup_regime]{1.Режим.}};
 		\draw (node cs:name=setup1,anchor=west) |- (3.5,-7);
@@ -72,11 +72,11 @@
 	\label{fig:structure}
 \end{figure}
 
+Примечание: * - пункт \textbf{<<Тест>>} появляется только при переходе в один из тестовых режимов.
+
 Меню имеет три уровня иерархии. Переход на уровень~0 меню осуществляется нажатием кнопки \textbf{[*]}. 
 
-Пункт \textbf{<<Тест>>} появляется только при переходе в один из тестовых режимов.
-
-Пункт \textbf{<<Информация>>} используется для просмотра текущих версий прошивок аппарата, а так же дополнительных сервисных функций. На уровне~1 меню он скрыт, но переход по нажатию кнопки возможен.
+Пункт \textbf{<<Информация>>} используется для просмотра текущих версий прошивок аппарата, а также дополнительных сервисных функций. На уровне~1 меню он скрыт, но переход по нажатию кнопки возможен.
 
 Внешний вид идикатора в первом уровне показан на рисунке~\ref{fig:structure_level1}.
 
