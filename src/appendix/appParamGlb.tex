@@ -36,21 +36,32 @@
    	\tabularnewline \hline 
   	\endhead
 
-    \multicolumn{11}{r}{продолжение следует\ldots} 
+    \multicolumn{11}{r}{продолжение следует\ldots}
 	\endfoot
 	\endlastfoot
 	
-	Тип защиты 			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Выбор одного из типов защиты: ППЗ, ДФЗ, НЗ. В зависимости от данного параметра определяется логика работы приемо-передатчика. \tabularnewline \hline
-	Тип Линии			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &   & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Количество приемопередатчиков в канале. \tabularnewline \hline
-	Доп.время без ман	& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Параметр определяет время срабатывания предупредительной сигнализации при отсутствии сигнала манипуляции на соответствующем входе приемопередатчика. \tabularnewline \hline
-	Загр чувствит по РЗ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Программное загрубление чувствительности приемника сигналов защиты. \tabularnewline \hline
-	Снижение уровня АК  & $\bullet$ &   &   &   &   & $\bullet$ & $\bullet$ &   &   & Снижение уровня передаваемых при автоконтроле сигналов на 6 дБ. \tabularnewline \hline
-	Частота ПРД			&   & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &   &   & $\bullet$ & $\bullet$ & Сдвиг частоты передатчика от центра номинальной полосы для обеспечения передачи и приема на разнесенных частотах. \tabularnewline \hline
-	Частота ПРМ			&   & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &   &   & $\bullet$ & $\bullet$ & Сдвиг частоты приемника от центра номинальной полосы для обеспечения передачи и приема на разнесенных частотах. \tabularnewline \hline
-	Сдвиг пер.фронта ПРД & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка срабатывания выхода приемника от пуска собственного передатчика. \tabularnewline \hline
-	Сдвиг зад.фронта ПРД & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка выключения выхода приемника по окончанию пуска собственного передатчика. \tabularnewline \hline
-	Сдвиг ПРМ			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Дополнительная задержка, вводимая в тракт приемника сигнала. \tabularnewline \hline		
-	Сдвиг ВЧ ПРД от ПУСК & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка начала передачи ВЧ передатчиком ВЧ сигнала в канал от сигнала пуск или манипуляция. \tabularnewline 
-
+	Совместимость		& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Режим работы приемопередатчика, обеспечивающий совместимость с приемопередатчиками других типов. \tabularnewline \hline
+	Синхронизация часов	& $\bullet$ &   &   &   &   & $\bullet$ & $\bullet$ &   &   & Включение/выключение синхронизации часов между приемопередатчиками. \tabularnewline \hline
+	Uвых номинальное	& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Номинальное выходное напряжение, за изменением которого следит приемопередатчик при включенном параметре <<Контроль вых. сигнала>>.  \tabularnewline \hline
+	Сетевой адрес		& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Адрес аппарата в локальной сети.  \tabularnewline \hline
+	Частота				& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Средняя частота номинальной полосы частот. \tabularnewline \hline
+	Номер аппарата		& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Порядковый номер аппарата в канале.  \tabularnewline \hline
+	Контроль вых.сигнала & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Включение либо отключение контроля за уровнем выходного сигнала передатчика.  \tabularnewline \hline
+	Порог ПРЕДУПР по КЧ & $\bullet$ &   &   &   &   & $\bullet$ & $\bullet$ &   &   & Порог срабатывания предупредительной сигнализации при изменении запаса по затуханию сигнала КЧ.  \tabularnewline \hline
+	Порог ПРЕДУПР по РЗ &   & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &   &   & $\bullet$ & $\bullet$ & Порог срабатывания предупредительной сигнализации при изменении запаса по затуханию сигнала РЗ.  \tabularnewline \hline
+	Порог аварии по КЧ	& $\bullet$ &   &   &   &   & $\bullet$ & $\bullet$ &   &   & Порог срабатывания аварийной сигнализации при изменении запаса по затуханию сигнала КЧ. \tabularnewline \hline
+	Коррекция напряжения & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Используется при несовпадении показаний индикатора «U» на дисплее блока БСП и измеренного с помощью внешних приборов напряжения на выходе усилителя мощности. \tabularnewline \hline
+	Коррекция тока 		& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Используется при несовпадении показаний индикатора «I» на дисплее блока БСП и измеренного с помощью внешних приборов тока на выходе усилителя мощности.  \tabularnewline \hline
+	Снижение ответа АК	&   &   &   &   & $\bullet$ &   &   &   &   & Снижение уровня второго сигнала ответа на запрос автоконтроля. \tabularnewline \hline
+	Протокол обмена		&   &   &   & $\bullet$ &   &   &   &   &   & Выбор протокола обмена с учетом местных условий. \tabularnewline \hline
+	Признак четности	&   &   &   & $\bullet$ &   &   &   &   &   & При включении снижает вероятность неправильного приема команды в сложной помеховой обстановке. \tabularnewline \hline
+	Порог по помехе		&   &   &   & $\bullet$ &   &   &   &   &   & Порог для счетчика накопления шумовых импульсов, при котором сработает сигнал предупреждения. \tabularnewline \hline
+	Допустимые провалы	&   &   &   & $\bullet$ &   &   &   & $\bullet$ &   & Порог по уровню тока выхода приемника, порождаемого просечками ВЧ сигнала, при одновременном пуске передатчиков манипулированным сигналом в ходе проверки ДФЗ. \tabularnewline \hline
+	Допустимая помеха	&   &   &   & $\bullet$ &   &   &   &   &   & Допустимый усредненный уровень шума в линии, отражающийся в цепи тока выхода, измеренный в процессе проверки канала. \tabularnewline \hline
+	Тип автоконтроля	&   &   &   & $\bullet$ &   &   &   &   &   & Выбор типа автоконтроля. \tabularnewline \hline
+	Период беглого АК	&   &   &   & $\bullet$ &   &   &   &   &   & Период беглого режима автоконтроля. \tabularnewline \hline
+	Период повт. бегл.АК &   &   &   & $\bullet$ &   &   &   &   &   & Период повтора беглого режима автоконтроля. \tabularnewline \hline
+	Коррекция времени АК &   &   &   & $\bullet$ &   &   &   &   &   & Коррекция времени автоконтроля. \tabularnewline 
+	
     \lasthline
 \end{tabularx} 
