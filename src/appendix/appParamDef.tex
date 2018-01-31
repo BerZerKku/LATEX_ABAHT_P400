@@ -1,32 +1,36 @@
 %%% ----------
 \ESKDappendix{Обязательное}{Параметры защиты} \label{app:paramDef}
 
-\begin{tabularx}{\linewidth}{| M{4.6cm} |*{7}{p{0.3cm} |} m{5.8cm} |}
+\begin{tabularx}{\linewidth}{| M{4.6cm} |*{9}{p{0.3cm} |} m{5.8cm} |}
 	\caption{Параметры защиты}  	 
 	\label{tab:appParamDef}	\tabularnewline
     
     \firsthline
     
-    \multirow{2}{*}{Параметр} & \multicolumn{7}{c|}{Совместимость} & \centering \multirow{2}{*}{Описание} \tabularnewline \cline{2-8}
+    \multirow{2}{*}{Параметр} & \multicolumn{9}{c|}{Совместимость} & \centering \multirow{2}{*}{Описание} \tabularnewline \cline{2-10}
      &
     \centering \begin{sideways} АВАНТ Р400~ \end{sideways} &
     \centering \begin{sideways} ПВЗ-90 \end{sideways} &
     \centering \begin{sideways} АВЗК-80 \end{sideways} &
+    \centering \begin{sideways} ПВЗУ-Е* \end{sideways} &
     \centering \begin{sideways} ПВЗЛ \end{sideways} &
+    \centering \begin{sideways} Линия-Р* \end{sideways} &
     \centering \begin{sideways} ПВЗК \end{sideways} &
     \centering \begin{sideways} ПВЗУ \end{sideways} &
     \centering \begin{sideways} ПВЗ \end{sideways} & 
    	\tabularnewline \hline 
     \endfirsthead
 	
-	\multicolumn{9}{l}{Продолжение таблицы~\ref{tab:appParamDef}}
+	\multicolumn{3}{l}{Продолжение таблицы~\ref{tab:appParamDef}}
 	\tabularnewline \hline
-    \multirow{2}{*}{Параметр} & \multicolumn{7}{c|}{Совместимость} & \centering \multirow{2}{*}{Описание} \tabularnewline \cline{2-8}
+    \multirow{2}{*}{Параметр} & \multicolumn{9}{c|}{Совместимость} & \centering \multirow{2}{*}{Описание} \tabularnewline \cline{2-10}
      &
     \centering \begin{sideways} АВАНТ Р400~ \end{sideways} &
     \centering \begin{sideways} ПВЗ-90 \end{sideways} &
     \centering \begin{sideways} АВЗК-80 \end{sideways} &
+    \centering \begin{sideways} ПВЗУ-Е* \end{sideways} &
     \centering \begin{sideways} ПВЗЛ \end{sideways} &
+    \centering \begin{sideways} Линия-Р* \end{sideways} &
     \centering \begin{sideways} ПВЗК \end{sideways} &
     \centering \begin{sideways} ПВЗУ \end{sideways} &
     \centering \begin{sideways} ПВЗ \end{sideways} & 
@@ -37,17 +41,19 @@
 	\endfoot
 	\endlastfoot
 	
-	Тип защиты 			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Выбор одного из типов защиты: ППЗ, ДФЗ, НЗ. В зависимости от данного параметра определяется логика работы приемо-передатчика. \tabularnewline \hline
-	Тип Линии			& $\bullet$ & $\bullet$ & $\bullet$ &   & $\bullet$ & $\bullet$ & $\bullet$ & Количество приемопередатчиков в канале. \tabularnewline \hline
-	Доп.время без ман	& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Параметр определяет время срабатывания предупредительной сигнализации при отсутствии сигнала манипуляции на соответствующем входе приемопередатчика. \tabularnewline \hline
-	Загр чувствит по РЗ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Программное загрубление чувствительности приемника сигналов защиты. \tabularnewline \hline
-	Снижение уровня АК  & $\bullet$ &   &   &   & $\bullet$ &   &   & Снижение уровня передаваемых при автоконтроле сигналов на 6 дБ. \tabularnewline \hline
-	Частота ПРД			&   & $\bullet$ & $\bullet$ & $\bullet$ &   & $\bullet$ & $\bullet$ & Сдвиг частоты передатчика от центра номинальной полосы для обеспечения передачи и приема на разнесенных частотах. \tabularnewline \hline
-	Частота ПРМ			&   & $\bullet$ & $\bullet$ & $\bullet$ &   & $\bullet$ & $\bullet$ & Сдвиг частоты приемника от центра номинальной полосы для обеспечения передачи и приема на разнесенных частотах. \tabularnewline \hline
-	Сдвиг пер.фронта ПРД & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка срабатывания выхода приемника от пуска собственного передатчика. \tabularnewline \hline
-	Сдвиг зад.фронта ПРД & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка выключения выхода приемника по окончанию пуска собственного передатчика. \tabularnewline \hline
-	Сдвиг ПРМ			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Дополнительная задержка, вводимая в тракт приемника сигнала. \tabularnewline \hline		
-	Сдвиг ВЧ ПРД от ПУСК & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка начала передачи ВЧ передатчиком ВЧ сигнала в канал от сигнала пуск или манипуляция. \tabularnewline 
+	Тип защиты 			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Выбор одного из типов защиты: ППЗ, ДФЗ, НЗ. В зависимости от данного параметра определяется логика работы приемо-передатчика. \tabularnewline \hline
+	Тип Линии			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &   & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Количество приемопередатчиков в канале. \tabularnewline \hline
+	Доп.время без ман	& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Параметр определяет время срабатывания предупредительной сигнализации при отсутствии сигнала манипуляции на соответствующем входе приемопередатчика. \tabularnewline \hline
+	Загр чувствит по РЗ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Программное загрубление чувствительности приемника сигналов защиты. \tabularnewline \hline
+	Снижение уровня АК  & $\bullet$ &   &   &   &   & $\bullet$ & $\bullet$ &   &   & Снижение уровня передаваемых при автоконтроле сигналов на 6 дБ. \tabularnewline \hline
+	Частота ПРД			&   & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &   &   & $\bullet$ & $\bullet$ & Сдвиг частоты передатчика от центра номинальной полосы для обеспечения передачи и приема на разнесенных частотах. \tabularnewline \hline
+	Частота ПРМ			&   & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &   &   & $\bullet$ & $\bullet$ & Сдвиг частоты приемника от центра номинальной полосы для обеспечения передачи и приема на разнесенных частотах. \tabularnewline \hline
+	Сдвиг пер.фронта ПРД & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка срабатывания выхода приемника от пуска собственного передатчика. \tabularnewline \hline
+	Сдвиг зад.фронта ПРД & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка выключения выхода приемника по окончанию пуска собственного передатчика. \tabularnewline \hline
+	Сдвиг ПРМ			& $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Дополнительная задержка, вводимая в тракт приемника сигнала. \tabularnewline \hline		
+	Сдвиг ВЧ ПРД от ПУСК & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & Задержка начала передачи ВЧ передатчиком ВЧ сигнала в канал от сигнала пуск или манипуляция. \tabularnewline 
 
     \lasthline
 \end{tabularx}
+
+* - совместимости доступны только в спец. исполнении.
