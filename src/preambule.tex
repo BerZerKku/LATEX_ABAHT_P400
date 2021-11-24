@@ -2,10 +2,11 @@
 \usepackage{cmap}			% Поиск по русским словам в конечном pdf документе
 \usepackage{eskdchngsheet}
 \usepackage[T2A]{fontenc}
-% \usepackage{pscyr}			% Подключение "красивых" шрифтов киррилицы
+\usepackage{pscyr}			% Подключение "красивых" шрифтов киррилицы
 \usepackage{amstext}
 \usepackage{amsmath}
 \usepackage{listings}
+\usepackage{tablefootnote}
 
 \usepackage{listings}		
 \lstset{ %
@@ -16,6 +17,10 @@
 	title=\lstname 
 }
 
+% нумерация таблиц и рисунков по разделам
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
 
 
 % работа с сылками
