@@ -2,23 +2,24 @@
 \usepackage{cmap}			% Поиск по русским словам в конечном pdf документе
 \usepackage{eskdchngsheet}
 \usepackage[T2A]{fontenc}
-\usepackage{pscyr}			% Подключение "красивых" шрифтов киррилицы
-\usepackage{amstext}
+% \usepackage{pscyr}			% Подключение "красивых" шрифтов киррилицы
+\usepackage{amstext} 
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{tablefootnote}
+\sloppy % без этой команды в Linux строки выходили за границы страницы
 
-\usepackage{listings}		
+\usepackage{listings}
 \lstset{ %
 	language=tcl,           % Язык программирования 	
 	frame=single,           % Добавить рамку
 	breaklines=true,        % Автоматический перенос строк
 	breakatwhitespace=true, % Переносить строки по словам
-	title=\lstname 
+	title=\lstname  
 }
 
 % нумерация таблиц и рисунков по разделам
-\usepackage{chngcntr}
+\usepackage{chngcntr} 
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
 
